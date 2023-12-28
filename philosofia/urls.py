@@ -1,5 +1,5 @@
 from django.urls import path
-from philosofia.views import home
+from .views import home
 
 
 urlpatterns = [
