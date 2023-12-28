@@ -1,16 +1,17 @@
 {% include 'philosofia/partial/head.html' %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a href="/">
-                    <i class="fa-regular fa-lightbulb"></i> 
-                    <span>Estoicismo</span>            
-                </a>
-            </h1>
+
+{% include 'philosofia/partial/header.html' %}
+
+    <div class="search-container">
+        <div class="container">
+            <form action="" class="search-form">
+                <input type="search" class="search-input" name="search">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </form>
         </div>
-    </header> 
+    </div>
 </body>
 
 </html>
