@@ -162,57 +162,48 @@
         }
 
         .main-content {
-            display:table;
             padding-top: 0;
-            flex-wrap: wrap;
         }
 
         .main-content-list {
-            display: flex;
-            flex-flow: column nowrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: var(--spacing-gutter-large);
-            overflow-x: auto;;
-            padding: var(--spacing-gutter-large);
         }
 
         .meditation {
-            flex: 0 0 auto;
-            background-color: var(--color-white);
+            background: var(--color-white);
             box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
             transform: scale(1);
             transition: all 300ms ease-in-out;
-            box-sizing: border-box;
-            border-width: 1px;
-            border-style: solid;
-            border-color: rgb(208, 215, 222);
-            border-radius: .4rem;
+            border-radius: 0.4rem;
             overflow: hidden;
         }
 
         
         .meditation img {
-            line-height: 100%;
+            max-width: 100%;
         }
 
         .meditation-list-item {
             max-width: 64rem;
+            height: fit-content;
         }
 
         .meditation-list-item:hover {
             transform: scale(1.01);
-            box-shadow: 6px 6px 10px (rgba(0, 0, 0, .2));
-        }
-        .meditation-title-container,
-        .meditation-author,
-        .meditation-content,
-        #meditation-meta-container {
-        padding: var(--spacing-gutter-medium);
+            box-shadow: -8px 8px 18px rgba(0, 0, 0, 0.25);
         }
 
         .meditation-title-container {
             padding: var(--spacing-gutter-medium);
-            padding-bottom: calc(var(--spacing-gutter-medium) / 2);
+            padding-bottom: 2rem;
 
+        }
+        
+        .meditation-title-container a {
+            text-decoration: none;
+            color: var(--color-primary-dark);
         }
 
         .meditation-author{
@@ -227,8 +218,6 @@
         .meditation-author-item {
             color: var(--color-gray-4);
             margin-right: 1rem;
-            line-height: 18px;
-            padding: var(--spacing-gutter-medium);
             font-style: italic;
             font-size: 1.4rem;
         }
@@ -242,21 +231,13 @@
         .meditation-author a:hover {
             color: var(--color-primary-dark);
         }
+    
 
-        #meditation-meta-container { 
+        .meditation-meta {
             display: table;
             flex-flow: row wrap;
             padding: var(--spacing-gutter-medium);
             background: var(--color-gray-1);
-        }
-       
-
-        .meditation-meta {
-            display: flex;
-            flex-flow: column nowrap;
-            flex-shrink: 1;
-            flex-grow: 1;
-            text-align: center;
         }
 
         .meditation-meta-title {
