@@ -242,9 +242,10 @@
 
         .meditation-meta {
             display: table;
-            flex-flow: row wrap;
-            padding: var(--spacing-gutter-medium);
-            background: var(--color-gray-1);
+            flex-flow: column nowrap;
+            flex-shrink: 1;
+            flex-grow: 1;
+            text-align: center;
         }
 
         .meditation-meta-title {
@@ -253,7 +254,7 @@
 
         .meditation-footer a {
             background: var(--color-primary-dark);
-            display: block;
+            display:block;
             color: var(--color-white);
             text-decoration: none;
             text-align: center;
