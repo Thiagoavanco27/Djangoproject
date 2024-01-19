@@ -7,6 +7,6 @@ def home(request):
     })
 
 def meditation(request, id):
-    return render(request, 'philosofia/pages/index.html', context={
+    return render(request, 'philosofia/pages/meditation-view.html', context={
         'name': 'Thiago Reis',
     })
