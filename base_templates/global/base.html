@@ -1,17 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
   {% include 'philosofia/partial/head.html' %}
-
-  <body>
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
   
-    {% include 'philosofia/partial/header.html' %}
-    {% include 'philosofia/partial/search.html' %}
+  {% include 'philosofia/partial/header.html' %}
+  {% include 'philosofia/partial/search.html' %}
   
   
-    <main class="main-content-container">
+  <main class="main-content-container">
   
-      {% block content %} {% endblock content %}
+    {% block content %} {% endblock content %}
         
-    </main>
+  </main>
   
     {% include 'philosofia/partial/footer.html' %}
-  </body>  
+</body>  
   
