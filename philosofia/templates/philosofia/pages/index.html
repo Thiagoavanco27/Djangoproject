@@ -3,8 +3,7 @@
 {% block title %}{% endblock title %}MEDITAÇÕES
 {% block content %}
     <div class="main-content main-content-list container">
-      {% include 'philosofia/partial/meditation.html' %}
-      {% include 'philosofia/partial/meditation.html' %}
-      {% include 'philosofia/partial/meditation.html' %}
-    </div>
+      {% for meditation in meditations %}
+        {% include 'philosofia/partial/meditation.html' %}
+      {% endfor %}
 {% endblock content %}

@@ -11,4 +11,5 @@ def home(request):
 def meditation(request, id):
     return render(request, 'philosofia/pages/meditation-view.html', context={
         'meditation': MakeMeditation(),
+        'is_detail_page': True,
     })
