@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "philosofia",
-    "base_templates"
+    "base_templates",
+
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,7 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     BASE_DIR / 'base_static',
 ]
+
 STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type

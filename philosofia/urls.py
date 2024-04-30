@@ -6,5 +6,5 @@ app_name = "philosophies"
 
 urlpatterns = [
     path("", views.home, name="Home"),
-    path("meditations/<int:id>/", views.meditation, name="Meditation"),
+    path("meditations/<id>/", views.meditation, name="meditation")
 ]
